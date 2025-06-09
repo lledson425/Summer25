@@ -1,0 +1,16 @@
+#   SIMULATION PARAMETERS
+           Temperature List = [0.1, 0.4, 0.7, 1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.8, 3.1, 3.4, 3.7, 4.0, 4.3, 4.6, 4.9]
+
+                       Seed = 0
+   Number of Warm-up Sweeps = 1000
+     Sweeps per Measurement = 100
+       Measurements per Bin = 10
+             Number of Bins = 10
+         Dimension of Spins = 1
+       Print Spins Configs? = 1
+#   LATTICE PARAMETERS
+        D = 2           
+        L = [4, 4]
+#   MODEL PARAMETERS
+    J = 1
+    h = 0
