@@ -22,6 +22,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+resnet = ["torch>=2.6", "torchvision>=0.21"]
 dev = ["pytest>=8.2", "ruff>=0.6"]
 
 [tool.setuptools]

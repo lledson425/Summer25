@@ -31,8 +31,10 @@ Python 3.10 or newer is recommended.
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -e ".[dev]"
+python -m pip install -e ".[dev,resnet]"
 ```
+
+The `resnet` extra supports the pretrained ResNet-18 embedding analysis in the Ising notebook. On GPU systems, install the PyTorch build appropriate for the local CUDA driver if needed.
 
 Launch Jupyter from the repository root so the installed `thesis_ml` package is
 available to every notebook:
