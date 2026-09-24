@@ -1,1 +1,34 @@
-Commit3.17/Ising code/raw_data.zip
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Generated data and model artifacts
+data/raw/*
+data/processed/*
+models/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+*.npy
+*.npz
+*.csv
+*.keras
+*.h5
+
+# Simulator build and output
+src/simulation/*.o
+src/simulation/on
+bins_*.txt
+spinConfigs_*.txt
+clustSizes_*.txt
+params_thread_*.txt
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+*Zone.Identifier
+.vscode/
+.idea/
