@@ -16,7 +16,8 @@ for lattice_size in 32 64 128; do
   size_root="$repo_root/data/raw/finite_size/L${lattice_size}"
   completed=0
   if [[ -d "$size_root" ]]; then
-    completed=$(grep -l '\*\*\* END OF SIMULATION \*\*\*' "$size_root"/*/simulation.log 2>/dev/null | wc -l)
+    completed=$(find "$size_root" -mindepth 2 -maxdepth 2 -name simulation.log -type f \
+      -exec grep -l '\*\*\* END OF SIMULATION \*\*\*' {} + 2>/dev/null | wc -l)
   fi
   printf 'L=%s complete=%s/1000\n' "$lattice_size" "$completed"
 done
