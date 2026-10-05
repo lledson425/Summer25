@@ -1,0 +1,17 @@
+# L=32 XY production grid: 41 points, dense from 0.90 to 1.20 T_BKT.
+# T_BKT reference = 0.89294 J; normalized endpoints = 0.60 and 1.80.
+#   SIMULATION PARAMETERS
+           Temperature List = [0.535764, 0.625058, 0.696493, 0.750070, 0.776858, 0.794717, 0.803646, 0.812575, 0.821505, 0.830434, 0.839364, 0.848293, 0.857222, 0.866152, 0.875081, 0.884011, 0.892940, 0.901869, 0.910799, 0.919728, 0.928658, 0.937587, 0.946516, 0.955446, 0.964375, 0.973305, 0.982234, 0.991163, 1.000093, 1.009022, 1.017952, 1.026881, 1.035810, 1.044740, 1.053669, 1.062599, 1.071528, 1.160822, 1.294763, 1.428704, 1.607292]
+                       Seed = 0
+   Number of Warm-up Sweeps = 1000
+     Sweeps per Measurement = 100
+       Measurements per Bin = 10
+             Number of Bins = 10
+         Dimension of Spins = 2
+       Print Spins Configs? = 1
+#   LATTICE PARAMETERS
+        D = 2
+        L = [32, 32]
+#   MODEL PARAMETERS
+    J = 1
+    h = 0
